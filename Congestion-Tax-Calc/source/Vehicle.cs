@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TollFeeCalculator
 {
-    public interface Vehicle
+    public interface IVehicle
     {
-        String GetVehicleType();
+        // Definierar ett gränssnitt för fordon som inkluderar de
+        // grundläggande egenskaperna och beteendena som alla fordonstyper ska ha.
+        string GetVehicleType(); // Hämtar en sträng som representerar fordonstypen.
+        bool IsTollExempt(); //check om avgiftsfri
     }
 }
