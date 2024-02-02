@@ -1,5 +1,4 @@
 # Congestion-Tax-Calculator
-Codetest
 
 # Introduktion 
 Kodtest
