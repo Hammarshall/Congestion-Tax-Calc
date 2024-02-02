@@ -21,3 +21,16 @@ namespace TollFeeCalculator
         }
     }
 }
+
+/*
+Här specificeras vilka fordon som är befriade från trängselskatt, vilket illustrerar tillämpningen av SoC genom att koncentrera sig på undantagslogiken
+för fordon. Användandet av IVehicle-interfacet reducerar beroendet på specifika fordonstyper, vilket ökar systemets flexibilitet och förenklar
+underhållsarbetet. En klar ansvarsindelning gör koden lättillgänglig och förståelig, vilket effektiviserar processen för framtida utveckling och
+förståelse av systemets funktioner. Dessutom lägger denna kodstruktur en solid grund för testbarhet, vilket bidrar till utvecklingen av pålitliga
+enhetstester för att bekräfta undantagslogikens korrekthet.
+
+Denna metod bidrar till en flexibel och modulär systemarkitektur som kan anpassas för att uppfylla både aktuella och framtida behov utan att
+kompromissa systemets integritet. Genom att isolera logiken för avgiftsundantag från andra delar av systemet, som avgiftsberäkning och datumhantering,
+förbättras den totala systemkvaliteten och stabiliteten. Detta är av yttersta vikt för att skapa hållbara och anpassningsbara lösningar som kan
+navigera i den ständigt föränderliga tekniska landskapet.
+*/

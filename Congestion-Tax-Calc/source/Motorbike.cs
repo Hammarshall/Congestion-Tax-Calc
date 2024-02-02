@@ -29,3 +29,11 @@ namespace TollFeeCalculator
         // Här kan ytterligare specifika metoder och egenskaper för Motorbike läggas till.
     }
 }
+
+/*
+Implementerar Modularitet och SoC genom att fokusera på motorcykelspecifika funktioner samtidigt som IVehicle-gränssnittet
+efterlevs för att uppnå Låg Koppling och främja kodåteranvändning. Denna design följer OCP för enkel utvidgning och optimerar testbarheten.
+
+Genom att använda LSP-principen, garanteras det att Motorbike smidigt kan fungera som en IVehicle i systemet,
+vilket förenklar enhetstestning och upprätthåller systemets integritet, vilket leder till en hållbar och utbyggbar kodstruktur.
+*/

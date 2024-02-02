@@ -63,3 +63,20 @@ namespace TollFeeCalculator
         }
     }
 }
+
+/*
+Utformningen och implementeringen av avgiftsscheman har jag noggrant följt principen SoC, genom att distinkt avgränsa hanteringen av
+avgiftsperioder från övriga systemdelar, som till exempel hanteringen av avgiftsfria datum. Denna design möjliggör en flexibel integration
+av nya avgiftsperioder och en effektiv process för att beräkna avgifter baserat på specifika tidsintervaller, vilket direkt bidrar till en
+förbättrad läsbarhet och enkelhet i underhållet av kodbasen. Genom att implementera OCP-principen, har jag säkerställt att systemet kan utökas
+och testas utan att befintlig funktionalitet störs.
+
+Att kapsla in avgiftsberäkningarna inom TollFeeSchedule, som i sin tur interagerar med TollFeePeriod för att hantera individuella avgiftsperioder,
+har jag uppnått en hög nivå av abstraktion och datakapsling. Denna strategi minimerar systemets interna komplexitet och förenklar interaktionen
+med avgiftsschemat, vilket leder till en mer strukturerad och modulär arkitektur. Denna arkitektur faciliterar inte bara enhetstestning utan även
+optimering av systemprestanda.
+
+Vidare har den låga kopplingen och höga kohesionen mellan TollFeeSchedule och TollFeePeriod minskat systemets inbördes beroenden och samlat funktionellt
+relaterade delar, vilket markant förstärker den övergripande kvaliteten och stabiliteten i systemet. Denna metodik speglar mitt engagemang för att
+skapa ett robust och skalbart system, redo att anpassas och utvecklas i takt med att nya krav uppstår.
+*/

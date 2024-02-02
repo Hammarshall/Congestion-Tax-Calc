@@ -33,3 +33,15 @@ namespace TollFeeCalculator
 
     }
 }
+
+/*
+Definiera en bilklass med distinkta attribut och funktioner, faciliterar integrationen av IVehicle-interfacet en harmonisering av fordonens
+egenskaper och beteenden av flera fordonstyper. Detta främjar polymorfism och optimerar TollCalculators förmåga att smidigt hantera en mångfald av fordon.
+
+Resulterar i konsistent hantering av olika fordon genom polymorfism och i linje med ISP-Principen inom SOLID-principerna, vilket förstärker systemets
+anpassningsbarhet och expansionsmöjligheter.
+
+TollExemptionService drar nytta av detta gränssnitt för att identifiera fordon som är befriade från avgifter, vilket minskar beroendet till specifika
+fordonstyper och bidrar till en modulär systemarkitektur. Implementeringen av IVehicle förbättrar inte bara kodens läsbarhet och underhållbarhet
+utan också den övergripande robustheten och skalbarheten i systemet.
+*/

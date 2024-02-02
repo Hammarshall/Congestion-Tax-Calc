@@ -27,3 +27,15 @@ namespace TollFeeCalculator
                    date.Month == 7;
     }
 }
+
+/*
+Koden är särskilt utformad för att effektivt administrera en uppsättning av avgiftsfria dagar, inklusive rörliga helgdagar som ändras år från år.
+Klassen erbjuder funktioner för att lägga till och validera dessa datum, vilket skapar en central punkt för hantering av avgiftsfria perioder.
+
+Denna funktionalitet kompletteras ytterligare av TollFreeDateChecker, som ansvarar för att separera logiken för att kontrollera avgiftsfria
+datum från själva hanteringen av datumen. Detta bidrar till enklare underhåll och uppdateringar av systemet. Genom att anamma principerna för
+SoC-principen och Don't Repeat Yourself (DRY), minimeras kodupprepning och systemets underhållbarhet förbättras avsevärt.
+
+Med en väl dokumenterad kodstruktur (genom tydliga kodkommentarer) förenklas förståelsen och integrationen av dessa komponenter för andra utvecklare.
+Detta stärker kodbasens modularitet och läsbarhet, vilket i sin tur faciliterar systemets skalbarhet och gör felsökningen mer effektiv.
+*/

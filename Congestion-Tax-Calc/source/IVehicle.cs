@@ -14,3 +14,12 @@ namespace TollFeeCalculator
         bool IsTollExempt(); //check om avgiftsfri
     }
 }
+
+/*
+Att tillämpa IVehicle-gränssnittet skapas en konsistent och skalbar struktur för olika fordonstyper,
+vilket utnyttjar ISP-Principen och polymorfism för att förbättra typsäkerhet och tillåta flexibel beteendemodifikation.
+I Vehicle.cs och dess konkreta implementeringar, såsom Car.cs och Motorbike.cs, etableras ett klart definierat kontrakt som
+specificerar de nödvändiga egenskaperna för fordon, vilket underlättar SoC-principen. Denna design bidrar till att minska
+beroendena mellan systemkomponenter och ökar kohesionen inom varje fordonstyp, vilket resulterar i en mer modulär och
+lättunderhållen kodstruktur som enkelt kan skalas upp och anpassas efter behov.
+*/

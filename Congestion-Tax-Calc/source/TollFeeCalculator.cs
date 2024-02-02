@@ -55,3 +55,14 @@ namespace TollFeeCalculator
         }
     }
 }
+
+/*
+Här skiljer vi tydligt på logiken för att beräkna avgifter och logiken för att identifiera avgiftsfria perioder, vilket är ett bra exempel
+på tillämpningen av SoC-principen och SRP-Principen från SOLID-ramverket.
+
+Att använda Dependency Injection, särskilt genom TollFeeSchedule, optimeras testbarheten och minskar kopplingen inom systemet.
+Detta gör det möjligt att effektivt mocka externa beroenden under enhetstestning, vilket förenklar testprocessen betydligt.
+
+Följande OCP-principen har TollCalculator utformats med flexibilitet i åtanke, så att den kan utökas med nya regler för avgiftsberäkning utan att
+påverka befintlig kodstruktur. Detta bidrar till en stabil och anpassningsbar kodbas som lätt kan utvecklas och förbättras över tid utan att riskera befintlig funktionalitet.
+*/
